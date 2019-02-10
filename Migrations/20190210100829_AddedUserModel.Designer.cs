@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DatingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190210063150_AddedUserModel")]
+    [Migration("20190210100829_AddedUserModel")]
     partial class AddedUserModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,11 +23,11 @@ namespace DatingApp.API.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Name");
-
                     b.Property<byte[]>("PasswordHash");
 
                     b.Property<byte[]>("PasswordSalt");
+
+                    b.Property<string>("Username");
 
                     b.HasKey("Id");
 
