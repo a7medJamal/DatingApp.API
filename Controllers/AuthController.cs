@@ -52,8 +52,7 @@ namespace DatingApp.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> login([FromBody] UserForLoginDto userForLoginDto)
         {
-            throw new Exception("Computer say no!");
-            var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(),userForLoginDto.Password);
+             var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(),userForLoginDto.Password);
 
             if (userFromRepo == null)
             return Unauthorized();
@@ -74,9 +73,9 @@ namespace DatingApp.API.Controllers
               SecurityAlgorithms.HmacSha512Signature)
           };
           var token = tokenHandler.CreateToken(tokenDescriptor);
-          var tokeString= tokenHandler.WriteToken(token);
+          var tokenString= tokenHandler.WriteToken(token);
 
-          return Ok (new{tokeString});
+          return Ok (new{tokenString});
       
       }
 
