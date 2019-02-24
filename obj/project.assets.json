@@ -45,6 +45,18 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "CloudinaryDotNet/1.1.0-rc1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.6/CloudinaryDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/CloudinaryDotNet.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4600,6 +4612,21 @@
         "automapper.extensions.microsoft.dependencyinjection.3.2.0.nupkg.sha512",
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "CloudinaryDotNet/1.1.0-rc1": {
+      "sha512": "722b1srUjTI+6OI6WqGcHVsvZofnggNfqhts3WYWd0BhL1YMVbH5tvhoUDQAitZZW5HhpaQquzWOBYMhWRl+cw==",
+      "type": "package",
+      "path": "cloudinarydotnet/1.1.0-rc1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cloudinarydotnet.1.1.0-rc1.nupkg.sha512",
+        "cloudinarydotnet.nuspec",
+        "lib/net/net40/Cloudinary.dll",
+        "lib/net/net40/Newtonsoft.Json.dll",
+        "lib/netstandard1.6/CloudinaryDotNet.deps.json",
+        "lib/netstandard1.6/CloudinaryDotNet.dll"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -12282,6 +12309,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 3.2.0",
+      "CloudinaryDotNet >= 1.1.0-rc1",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Design >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.0.1",
@@ -12296,11 +12324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DatingAPP\\datingapp.api\\DatingApp.API.csproj",
+      "projectUniqueName": "d:\\DatingAPP\\DatingApp.API\\DatingApp.API.csproj",
       "projectName": "DatingApp.API",
-      "projectPath": "D:\\DatingAPP\\datingapp.api\\DatingApp.API.csproj",
+      "projectPath": "d:\\DatingAPP\\DatingApp.API\\DatingApp.API.csproj",
       "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\DatingAPP\\datingapp.api\\obj\\",
+      "outputPath": "d:\\DatingAPP\\DatingApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12333,6 +12361,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[3.2.0, )"
+          },
+          "CloudinaryDotNet": {
+            "target": "Package",
+            "version": "[1.1.0-rc1, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
