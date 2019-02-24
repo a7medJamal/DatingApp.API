@@ -38,6 +38,14 @@ namespace DatingApp.API.Controllers {
 
         }
 
+      [HttpGet("(id)", Name= "GetPhoto")]
+      public async Task<IActionResult> GetPgoto (int id)
+      {
+       var photoFromRepo =await  _repo.GetPhoto(id);
+       var photo = _mapper.Map<PhotoForReturnDto>(photoFromRepo);
+       return Ok (photo);
+      }
+
         [HttpPost]
         public async Task<IActionResult> AddPhotoForUser(int userId, PhotoForCreationDto photoDto )
         {
@@ -68,7 +76,7 @@ namespace DatingApp.API.Controllers {
            }
            photoDto.Url =uploadResult.Uri .ToString();
            photoDto.PublicId = uploadResult.PublicId;
-           
+
            var photo = _mapper.Map<Photo>(photoDto);
            photo.User = user;
 
@@ -77,9 +85,10 @@ namespace DatingApp.API.Controllers {
 
           user.Photos.Add(photo);
 
+         var photoToReturn = _mapper.Map<PhotoForReturnDto>(photo);
           if (await _repo.SaveAll())
           {
-              return Ok();
+              return CreatedAtRoute("GetPhoto",new{id = photo.Id},photoToReturn );
           }    
 
           return BadRequest ("cloud not add the photo");
