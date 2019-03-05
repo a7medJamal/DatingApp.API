@@ -26,3 +26,17 @@ D:\DatingAPP\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.AssemblyInfo.cs
 D:\DatingAPP\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorTargetAssemblyInfo.cache
 D:\DatingAPP\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.dll
 D:\DatingAPP\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.pdb
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.deps.json
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.runtimeconfig.json
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.runtimeconfig.dev.json
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.dll
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.pdb
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.csprojAssemblyReference.cache
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorAssemblyInfo.cache
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorAssemblyInfo.cs
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.AssemblyInfo.cs
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorTargetAssemblyInfo.cache
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.dll
+C:\Users\Ahmed\Downloads\Compressed\du\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.pdb
