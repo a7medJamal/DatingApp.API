@@ -20,12 +20,17 @@ namespace DatingApp.API.Data {
             _context.Remove (entity);
         }
 
-        public Task<Photo> GetMainPhotoForUser (int userId) {
-            return _context.Photos.Where (u => u.UserId == userId).FirstOrDefaultAsync (p => p.IsMain);
+        public async Task<Like> GetLike(int userId, int recipientId)
+        {
+            return await _context.Likes.FirstOrDefaultAsync(u => u.LikerId ==userId && u.LikeeId ==recipientId);
         }
 
-        public Task<Photo> GetPhoto (int id) {
-            var photo = _context.Photos.FirstOrDefaultAsync (p => p.Id == id);
+        public async Task<Photo> GetMainPhotoForUser (int userId) {
+            return await _context.Photos.Where (u => u.UserId == userId).FirstOrDefaultAsync (p => p.IsMain);
+        }
+
+        public async Task<Photo> GetPhoto (int id) {
+            var photo = await _context.Photos.FirstOrDefaultAsync (p => p.Id == id);
             return photo;
         }
 
